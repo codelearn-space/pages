@@ -1,0 +1,8 @@
+type AdminLogin {
+  email: String! @unique
+  password: String!
+}
+
+type Query {
+  adminLoginTempByEmailAndPassword(email: String!, password: String!): AdminLogin
+}
